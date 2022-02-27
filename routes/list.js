@@ -5,7 +5,7 @@ const {newListItem, getAllLists, updateList, deleteList, deleteAll} = require(".
 
 
 router.route("/").get(getAllLists).post(newListItem).delete(deleteAll)// put ja patch ero on että kun patchin kirjoitetan name : "Nimi" se laita kaiken muun niin kuin oli ja put näyttää vain nimen.
-router.route("/:id").patch(updateList).delete(deleteList)
+router.route("/:id").patch(updateList).delete(deleteList).put(updateList)
 
 
 
